@@ -24,7 +24,7 @@ Visit us at: [https://edudesi.com](https://edudesi.com)
 
 ## 📧 Contact
 
-- **Email**: info@edudesi.com
+- **Email**: kothasravani16@gmail.com
 - **WhatsApp**: +91-XXXXX-XXXXX
 
 ## 🛠️ Technologies Used
