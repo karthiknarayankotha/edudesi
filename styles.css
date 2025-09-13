@@ -60,14 +60,11 @@ h6 {
 }
 
 @keyframes wiggle {
-
-  0%,
-  100% {
-    transform: rotate(-3deg);
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(-2deg);
   }
-
   50% {
-    transform: rotate(3deg);
+    transform: translate3d(0, 0, 0) rotate(2deg);
   }
 }
 
@@ -118,26 +115,20 @@ h6 {
 }
 
 @keyframes scalePulse {
-
-  0%,
-  100% {
-    transform: scale(1);
+  0%, 100% {
+    transform: scale3d(1, 1, 1);
   }
-
   50% {
-    transform: scale(1.05);
+    transform: scale3d(1.03, 1.03, 1);
   }
 }
 
 @keyframes bounceSlow {
-
-  0%,
-  100% {
-    transform: translateY(0);
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
   }
-
   50% {
-    transform: translateY(-10px);
+    transform: translate3d(0, -8px, 0);
   }
 }
 
@@ -169,7 +160,8 @@ h6 {
 }
 
 .animate-wiggle {
-  animation: wiggle 1s ease-in-out infinite;
+  animation: wiggle 2s ease-in-out infinite;
+  will-change: transform;
 }
 
 .animate-slide-left {
@@ -189,15 +181,18 @@ h6 {
 }
 
 .animate-scale {
-  animation: scalePulse 2s ease-in-out infinite;
+  animation: scalePulse 3s ease-in-out infinite;
+  will-change: transform;
 }
 
 .animate-bounce-custom {
-  animation: bounceSlow 2s ease-in-out infinite;
+  animation: bounceSlow 3s ease-in-out infinite;
+  will-change: transform;
 }
 
 .animate-pulse-custom {
-  animation: pulseSlow 3s ease-in-out infinite;
+  animation: pulseSlow 4s ease-in-out infinite;
+  will-change: opacity;
 }
 
 .animate-shimmer {
